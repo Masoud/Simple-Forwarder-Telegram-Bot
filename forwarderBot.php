@@ -54,7 +54,7 @@ function messageToAdmin($user_id, $user_name, $month)
     $message = "از آی‌دی: " . $user_id . "\n \n" .
         "با یوزرنیم: @" . $user_name . "\n \n" .
         "وی‌پی‌ان " . $month . " میخواد";
-    $adminChatID = '74415978';
+    $adminChatID = 'xxxx';
     $textToAdmin = [
         'chat_id' => $adminChatID,
         'text' => $message,
