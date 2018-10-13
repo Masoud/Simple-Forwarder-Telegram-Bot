@@ -10,7 +10,7 @@ $username = $json['message']['from']['username'];
 $text = $json['message']['text'];
 $MID = $json['message']['message_id'];
 $callback = $json['callback_query']['data'];
-$botToken = '625923840:AAEadvZ73YX4HsMw5xo-tHOcpcO7TcqaK0k';
+$botToken = '625923840:AAxxxxxxxxxxMw5xo-tHOcpcO7TcqaK0k';
 function sendToTelegram($text)
 {
     Unirest\Request::post('https://api.telegram.org/bot' . $GLOBALS['botToken'] . '/sendMessage', $GLOBALS['headers'], $text);

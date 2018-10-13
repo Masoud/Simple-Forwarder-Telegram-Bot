@@ -14,29 +14,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="forwarderBot.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="forwarderBot.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/forwarderBot.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="16" column="40" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="16" selection-end-column="40" />
+            <state relative-caret-position="3213">
+              <caret line="119" column="39" lean-forward="true" selection-start-line="119" selection-start-column="39" selection-end-line="119" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stb.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stb.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="12" column="60" lean-forward="true" selection-end-line="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stb.php" pinned="true" current-in-tab="true">
-        <entry file="remoteDeploymentFS://&lt;89072926-c562-473e-af6d-7bb1e3b688ab&gt;/bots/stb.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" column="49" lean-forward="true" selection-end-line="124" selection-end-column="1" />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="135">
+                <caret line="5" column="152" lean-forward="true" selection-start-line="5" selection-start-column="152" selection-end-line="5" selection-end-column="152" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -53,14 +47,18 @@
       <replace>'</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/forwarderBot.php" />
-        <option value="$PROJECT_DIR$/stb.php" />
-        <option value="&lt;89072926-c562-473e-af6d-7bb1e3b688ab&gt;/bots/stb.php" />
         <option value="&lt;89072926-c562-473e-af6d-7bb1e3b688ab&gt;/bots/forwarderBot.php" />
+        <option value="&lt;89072926-c562-473e-af6d-7bb1e3b688ab&gt;/bots/stb.php" />
+        <option value="$PROJECT_DIR$/stb.php" />
+        <option value="$PROJECT_DIR$/forwarderBot.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -86,6 +84,7 @@
     <option name="width" value="2560" />
     <option name="height" value="1005" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -140,12 +139,12 @@
       <option name="presentableId" value="Default" />
       <updated>1539249860602</updated>
       <workItem from="1539249862157" duration="1950000" />
-      <workItem from="1539277605861" duration="8341000" />
+      <workItem from="1539277605861" duration="8698000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10291000" />
+    <option name="totallyTimeSpent" value="10648000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-107" width="2560" height="1005" extended-state="0" />
@@ -156,10 +155,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="File Transfer" order="7" weight="0.32896176" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32896176" />
-      <window_info active="true" anchor="right" id="Remote Host" order="3" visible="true" weight="0.3296875" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.125" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32896176" />
+      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.3296875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.125" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -190,15 +189,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stb.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="12" column="60" lean-forward="true" selection-end-line="37" />
+        <state relative-caret-position="2781">
+          <caret line="103" column="25" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="5" column="152" lean-forward="true" selection-start-line="5" selection-start-column="152" selection-end-line="5" selection-end-column="152" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/forwarderBot.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="16" column="40" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="16" selection-end-column="40" />
+        <state relative-caret-position="3213">
+          <caret line="119" column="39" lean-forward="true" selection-start-line="119" selection-start-column="39" selection-end-line="119" selection-end-column="39" />
         </state>
       </provider>
     </entry>
