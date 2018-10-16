@@ -10,7 +10,7 @@ $username = $json['message']['from']['username'];
 $text = $json['message']['text'];
 $MID = $json['message']['message_id'];
 $callback = $json['callback_query']['data'];
-$botToken = '625923840:AAxxxxxxxxxxMw5xo-tHOcpcO7TcqaK0k';
+$botToken = '625923840:AAE6gR1V6orE8gsF-QE2ExnrZNUQUvRJ7fQ';
 function sendToTelegram($text)
 {
     Unirest\Request::post('https://api.telegram.org/bot' . $GLOBALS['botToken'] . '/sendMessage', $GLOBALS['headers'], $text);
@@ -24,12 +24,32 @@ function messageToUser($user_id, $month)
         'parse_mode' => 'html',
     ];
     sendToTelegram($text);
-    $ThanksText = [
+    $message = '
+    نام کاربری دلخواه خود را ارسال کنید
+    ';
+    $SendUserName = [
         'chat_id' => $user_id,
-        'text' => "با تشکر از ارتباط شما، به زودی با شما در تماس خواهیم بود. 🙏",
+        'text' => $message,
         'parse_mode' => 'html',
     ];
-    sendToTelegram($ThanksText);
+    sendToTelegram($SendUserName);
+    if (isset($text)) {
+        $submitUsername = "
+        نام کاربری شما با عنوان <strong>" . $text . "</strong> ثبت شد.
+        ";
+        $textToSubMit = [
+            'chat_id' => $user_id,
+            'text' => $submitUsername,
+            'parse_mode' => 'html',
+        ];
+        sendToTelegram($textToSubMit);
+        $ThanksText = [
+            'chat_id' => $user_id,
+            'text' => "با تشکر از ارتباط شما، به زودی با شما در تماس خواهیم بود. 🙏",
+            'parse_mode' => 'html',
+        ];
+        sendToTelegram($ThanksText);
+    }
 }
 
 function messageToUserForPlan($user_id)
