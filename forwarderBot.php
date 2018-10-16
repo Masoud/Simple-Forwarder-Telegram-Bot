@@ -11,6 +11,7 @@ $text = $json['message']['text'];
 $MID = $json['message']['message_id'];
 $callback = $json['callback_query']['data'];
 $botToken = '625923840:AAE6gR1V6orE8gsF-QE2ExnrZNUQUvRJ7fQ';
+
 function sendToTelegram($text)
 {
     Unirest\Request::post('https://api.telegram.org/bot' . $GLOBALS['botToken'] . '/sendMessage', $GLOBALS['headers'], $text);
@@ -18,14 +19,15 @@ function sendToTelegram($text)
 
 function messageToUser($user_id, $month)
 {
-    $text = [
+    $text2 = [
         'chat_id' => $user_id,
         'text' => "شما «خرید وی‌پی‌ان " . $month . "» را انتخاب کرده‌اید.",
         'parse_mode' => 'html',
     ];
-    sendToTelegram($text);
+    sendToTelegram($text2);
     $message = '
-    نام کاربری دلخواه خود را ارسال کنید
+    برای انتخاب نام کاربری دلخواه بر روی متن زیر کلیک کنید:
+    /Username
     ';
     $SendUserName = [
         'chat_id' => $user_id,
@@ -33,23 +35,6 @@ function messageToUser($user_id, $month)
         'parse_mode' => 'html',
     ];
     sendToTelegram($SendUserName);
-    if (isset($text)) {
-        $submitUsername = "
-        نام کاربری شما با عنوان <strong>" . $text . "</strong> ثبت شد.
-        ";
-        $textToSubMit = [
-            'chat_id' => $user_id,
-            'text' => $submitUsername,
-            'parse_mode' => 'html',
-        ];
-        sendToTelegram($textToSubMit);
-        $ThanksText = [
-            'chat_id' => $user_id,
-            'text' => "با تشکر از ارتباط شما، به زودی با شما در تماس خواهیم بود. 🙏",
-            'parse_mode' => 'html',
-        ];
-        sendToTelegram($ThanksText);
-    }
 }
 
 function messageToUserForPlan($user_id)
@@ -119,7 +104,47 @@ if ($text == '/start') {
         ])
     ];
     sendToTelegram($text);
+} else if ($text == '/Username') {
+    $myfile = fopen("isIt.txt", "w");
+    $nextNumber = 1;
+    fwrite($myfile, $nextNumber);
+    fclose($myfile);
+    $sendUser = [
+        'chat_id' => $id,
+        'text' => 'یوزرنیم خودتون رو انتخاب کنید',
+        'parse_mode' => 'html',
+    ];
+    sendToTelegram($sendUser);
+} else {
+    $file = 'isIt.txt';
+    $f = fopen($file, 'r');
+    $number = fgets($f);
+    $number = (int)$number;
+    if ($number == 1) {
+        $submitUsername = "
+        نام کاربری شما با عنوان <strong>" . $text . "</strong> ثبت شد.
+        ";
+        $textToSubMit = [
+            'chat_id' => $id,
+            'text' => $submitUsername,
+            'parse_mode' => 'html',
+        ];
+        sendToTelegram($textToSubMit);
+        $ThanksText = [
+            'chat_id' => $id,
+            'text' => "با تشکر از ارتباط شما، به زودی با شما در تماس خواهیم بود. 🙏",
+            'parse_mode' => 'html',
+        ];
+        sendToTelegram($ThanksText);
+    }
+    fclose($f);
+    $myfile = fopen("isIt.txt", "w");
+    $nextNumber = 0;
+    fwrite($myfile, $nextNumber);
+    fclose($myfile);
 }
+
+
 if (isset($callback)) {
     $UserId = $json['callback_query']['from']['id'];
     $UserName = $json['callback_query']['from']['username'];
