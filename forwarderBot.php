@@ -10,7 +10,7 @@ $username = $json['message']['from']['username'];
 $text = $json['message']['text'];
 $MID = $json['message']['message_id'];
 $callback = $json['callback_query']['data'];
-$botToken = '625923840:AAE6gR1V6orE8gsF-QE2ExnrZNUQUvRJ7fQ';
+$botToken = '625923840:AAExxxxxxxnrZNUQUvRJ7fQ';
 
 function sendToTelegram($text)
 {

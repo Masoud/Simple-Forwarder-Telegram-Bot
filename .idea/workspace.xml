@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd105202-146b-4e1b-958d-d3d6dde03f9d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/isIt.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forwarderBot.php" beforeDir="false" afterPath="$PROJECT_DIR$/forwarderBot.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,20 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="forwarderBot.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="forwarderBot.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/forwarderBot.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" column="1" lean-forward="true" selection-end-line="144" selection-end-column="1" />
+            <state relative-caret-position="270">
+              <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stb.php" pinned="true" current-in-tab="true">
+      <file leaf-file-name="stb.php" pinned="true" current-in-tab="false">
         <entry file="remoteDeploymentFS://&lt;89072926-c562-473e-af6d-7bb1e3b688ab&gt;/bots/stb.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+            <state relative-caret-position="393">
+              <caret line="85" column="22" lean-forward="true" selection-end-line="169" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -66,10 +65,10 @@
         <option value="&lt;89072926-c562-473e-af6d-7bb1e3b688ab&gt;/bots/forwarderBot.php" />
         <option value="$PROJECT_DIR$/stb.php" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/forwarderBot.php" />
         <option value="$PROJECT_DIR$/isIt.txt" />
         <option value="&lt;89072926-c562-473e-af6d-7bb1e3b688ab&gt;/bots/isIt.txt" />
         <option value="&lt;89072926-c562-473e-af6d-7bb1e3b688ab&gt;/bots/stb.php" />
+        <option value="$PROJECT_DIR$/forwarderBot.php" />
       </list>
     </option>
   </component>
@@ -150,16 +149,15 @@
       <updated>1539249860602</updated>
       <workItem from="1539249862157" duration="1950000" />
       <workItem from="1539277605861" duration="10210000" />
-      <workItem from="1539710910780" duration="3923000" />
+      <workItem from="1539710910780" duration="4895000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16083000" />
+    <option name="totallyTimeSpent" value="17055000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="825" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1280" height="725" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -167,9 +165,9 @@
       <window_info anchor="bottom" id="File Transfer" order="7" weight="0.3288948" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32756326" />
-      <window_info active="true" anchor="right" id="Remote Host" order="3" visible="true" weight="0.32916668" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.125" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32718894" />
+      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.3703125" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.140625" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -226,17 +224,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forwarderBot.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="1" lean-forward="true" selection-end-line="144" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/isIt.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forwarderBot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
         </state>
       </provider>
     </entry>
