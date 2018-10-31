@@ -56,16 +56,31 @@ function messageToUserForPlan($user_id)
 
 function messageToAdmin($user_id, $user_name, $month)
 {
+    $current = file_get_contents("info.txt");
     $message = "از آی‌دی: " . $user_id . "\n \n" .
         "با یوزرنیم: @" . $user_name . "\n \n" .
-        "وی‌پی‌ان " . $month . " میخواد";
-    $adminChatID = 'xxxx';
+        "وی‌پی‌ان " . $month . " میخواد\n \n" . "به همراه مشخصات زیر:\n \n" .
+        $current;
+    $adminChatID = '74415978';
     $textToAdmin = [
         'chat_id' => $adminChatID,
         'text' => $message,
         'parse_mode' => 'html',
     ];
     sendToTelegram($textToAdmin);
+}
+function usernamePassword(){
+    $current = file_get_contents("info.txt");
+    $adminChatID = '74415978';
+    $textToAdmin = [
+        'chat_id' => $adminChatID,
+        'text' => $current,
+        'parse_mode' => 'html',
+    ];
+    sendToTelegram($textToAdmin);
+    $info = fopen("info.txt", "w");
+    fwrite($info, null);
+    fclose($info);
 }
 
 if ($text == '/start') {
@@ -134,7 +149,7 @@ if ($text == '/start') {
     if ($number == 1) {
         $username = $text;
         $current = file_get_contents("info.txt");
-        $data_to_write.= $current." ".$username."\n";
+        $data_to_write .= $current . " " . $username . "\n";
         file_put_contents('info.txt', $data_to_write);
 
         $submitUsername = "
@@ -159,7 +174,7 @@ if ($text == '/start') {
     } else if ($number == 2) {
         $password = $text;
         $current = file_get_contents("info.txt");
-        $data_to_write.= $current." ".$password."\n";
+        $data_to_write .= $current . " " . $password . "\n";
         file_put_contents('info.txt', $data_to_write);
         $submitPassword = "
         پسورد شما با عنوان <strong>" . $text . "</strong> ثبت شد.
@@ -176,6 +191,7 @@ if ($text == '/start') {
             'parse_mode' => 'html',
         ];
         sendToTelegram($ThanksText);
+        usernamePassword();
     }
     fclose($f);
     $myfile = fopen("isIt.txt", "w");
