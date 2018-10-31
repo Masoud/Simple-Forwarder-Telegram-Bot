@@ -10,7 +10,7 @@ $username = $json['message']['from']['username'];
 $text = $json['message']['text'];
 $MID = $json['message']['message_id'];
 $callback = $json['callback_query']['data'];
-$botToken = '625923840:AAFoK9EOLFTjLUD7e3_NKOsDaOBoWcZPYt0';
+$botToken = '625923840:AAxxxxxxxOsDaOBoWcZPYt0';
 
 function sendToTelegram($text)
 {
@@ -71,7 +71,7 @@ function messageToAdmin($user_id, $user_name, $month)
 }
 function usernamePassword(){
     $current = file_get_contents("info.txt");
-    $adminChatID = '74415978';
+    $adminChatID = 'xxxx';
     $textToAdmin = [
         'chat_id' => $adminChatID,
         'text' => $current,
