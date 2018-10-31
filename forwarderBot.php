@@ -10,7 +10,7 @@ $username = $json['message']['from']['username'];
 $text = $json['message']['text'];
 $MID = $json['message']['message_id'];
 $callback = $json['callback_query']['data'];
-$botToken = '625923840:AAExxxxxxxnrZNUQUvRJ7fQ';
+$botToken = '625923840:AAFoK9EOLFTjLUD7e3_NKOsDaOBoWcZPYt0';
 
 function sendToTelegram($text)
 {
@@ -115,6 +115,17 @@ if ($text == '/start') {
         'parse_mode' => 'html',
     ];
     sendToTelegram($sendUser);
+} else if ($text == '/Password') {
+    $myfile = fopen("isIt.txt", "w");
+    $nextNumber = 2;
+    fwrite($myfile, $nextNumber);
+    fclose($myfile);
+    $sendUser = [
+        'chat_id' => $id,
+        'text' => 'پسورد خودتون رو انتخاب کنید',
+        'parse_mode' => 'html',
+    ];
+    sendToTelegram($sendUser);
 } else {
     $file = 'isIt.txt';
     $f = fopen($file, 'r');
@@ -127,6 +138,26 @@ if ($text == '/start') {
         $textToSubMit = [
             'chat_id' => $id,
             'text' => $submitUsername,
+            'parse_mode' => 'html',
+        ];
+        sendToTelegram($textToSubMit);
+        $message = '
+    برای انتخاب پسورد دلخواه بر روی متن زیر کلیک کنید:
+    /Password
+    ';
+        $SendUserName = [
+            'chat_id' => $id,
+            'text' => $message,
+            'parse_mode' => 'html',
+        ];
+        sendToTelegram($SendUserName);
+    } else if ($number == 2) {
+        $submitPassword = "
+        پسورد شما با عنوان <strong>" . $text . "</strong> ثبت شد.
+        ";
+        $textToSubMit = [
+            'chat_id' => $id,
+            'text' => $submitPassword,
             'parse_mode' => 'html',
         ];
         sendToTelegram($textToSubMit);
