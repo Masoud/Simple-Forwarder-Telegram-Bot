@@ -54,25 +54,22 @@ function messageToUserForPlan($user_id)
     sendToTelegram($text);
 }
 
-function messageToAdmin($user_id, $user_name, $month)
+function saveData($user_id, $user_name, $month)
 {
-//    $message="
-//    از آی‌دی: 8955
-//    با یوزرنیم: @masoudnikoomanesh
-//    وی‌پی‌ان ۱ ماهه می‌خواد
-//
-//    username: masoud
-//    password: 1234
-//    ";
-//    $adminChatID = '74415978';
-//    $textToAdmin = [
-//        'chat_id' => $adminChatID,
-//        'text' => $message,
-//        'parse_mode' => 'html',
-//    ];
-//    sendToTelegram($textToAdmin);
+    $current = file_get_contents("info.txt");
+    $message = "
+        🆔: " . $user_id . "
+        
+👤 با یوزرنیم: @" . $user_name . "
+🔒 وی‌پی‌ان: " . $month . "
+        ";
+    $current = file_get_contents("info.txt");
+    $data_to_write .= $current . " " . $message . "\n";
+    file_put_contents('info.txt', $data_to_write);
 }
-function usernamePassword(){
+
+function usernamePassword()
+{
     $current = file_get_contents("info.txt");
     $adminChatID = '74415978';
     $textToAdmin = [
@@ -153,8 +150,8 @@ if ($text == '/start') {
         $username = $text;
         $current = file_get_contents("info.txt");
         $data_to_write .=
-            $current."        
-〽️ یوزرنیم: ".$username."";
+            $current . "        
+〽️ یوزرنیم: " . $username . "";
         file_put_contents('info.txt', $data_to_write);
 
         $submitUsername = "
@@ -180,8 +177,8 @@ if ($text == '/start') {
         $password = $text;
         $current = file_get_contents("info.txt");
         $data_to_write .=
-            $current."
-            🔱 پسورد: ".$password."
+            $current . "
+            🔱 پسورد: " . $password . "
             ";
         file_put_contents('info.txt', $data_to_write);
         $submitPassword = "
@@ -208,74 +205,25 @@ if ($text == '/start') {
     fclose($myfile);
 }
 
-
 if (isset($callback)) {
     $UserId = $json['callback_query']['from']['id'];
     $UserName = $json['callback_query']['from']['username'];
     if ($callback == '1') {
         $month = "۱ ماهه";
         messageToUser($UserId, $month);
-
-        $message="
-        🆔: ".$UserId."
-        
-👤 با یوزرنیم: @".$UserName."
-🔒 وی‌پی‌ان: ".$month."
-        ";
-
-//        $username = $text;
-        $current = file_get_contents("info.txt");
-        $data_to_write .= $current . " " . $message . "\n";
-        file_put_contents('info.txt', $data_to_write);
-
-//        messageToAdmin($UserId, $UserName, $month);
+        saveData($UserId, $UserName, $month);
     } else if ($callback == '3') {
         $month = "۳ ماهه";
         messageToUser($UserId, $month);
-
-        $message="
-        🆔: ".$UserId."
-        
-👤 با یوزرنیم: @".$UserName."
-🔒 وی‌پی‌ان: ".$month."
-        ";
-
-//        $username = $text;
-        $current = file_get_contents("info.txt");
-        $data_to_write .= $current . " " . $message . "\n";
-        file_put_contents('info.txt', $data_to_write);
-//        messageToAdmin($UserId, $UserName, $month);
+        saveData($UserId, $UserName, $month);
     } else if ($callback == '6') {
         $month = "۶ ماهه";
         messageToUser($UserId, $month);
-        $message="
-        🆔: ".$UserId."
-        
-👤 با یوزرنیم: @".$UserName."
-🔒 وی‌پی‌ان: ".$month."
-        ";
-
-//        $username = $text;
-        $current = file_get_contents("info.txt");
-        $data_to_write .= $current . " " . $message . "\n";
-        file_put_contents('info.txt', $data_to_write);
-//        messageToAdmin($UserId, $UserName, $month);
+        saveData($UserId, $UserName, $month);
     } else if ($callback == '12') {
         $month = "۱۲ ماهه";
         messageToUser($UserId, $month);
-        $message="
-        🆔: ".$UserId."
-        
-👤 با یوزرنیم: @".$UserName."
-🔒 وی‌پی‌ان: ".$month."
-        ";
-
-//        $username = $text;
-        $current = file_get_contents("info.txt");
-        $data_to_write .= $current . " " . $message . "\n";
-        file_put_contents('info.txt', $data_to_write);
-        file_put_contents('info.txt', $data_to_write);
-//        messageToAdmin($UserId, $UserName, $month);
+        saveData($UserId, $UserName, $month);
     } else if ($callback == '13') {
         messageToUserForPlan($UserId);
     }
