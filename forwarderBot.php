@@ -10,7 +10,7 @@ $username = $json['message']['from']['username'];
 $text = $json['message']['text'];
 $MID = $json['message']['message_id'];
 $callback = $json['callback_query']['data'];
-$botToken = '625923840:AAxxxxxxxOsDaOBoWcZPYt0';
+$botToken = '625923840:AAG0wtK64xgTK2JULcLAU4VC9I_hQsleCcM';
 
 function sendToTelegram($text)
 {
@@ -56,22 +56,25 @@ function messageToUserForPlan($user_id)
 
 function messageToAdmin($user_id, $user_name, $month)
 {
-    $current = file_get_contents("info.txt");
-    $message = "از آی‌دی: " . $user_id . "\n \n" .
-        "با یوزرنیم: @" . $user_name . "\n \n" .
-        "وی‌پی‌ان " . $month . " میخواد\n \n" . "به همراه مشخصات زیر:\n \n" .
-        $current;
-    $adminChatID = '74415978';
-    $textToAdmin = [
-        'chat_id' => $adminChatID,
-        'text' => $message,
-        'parse_mode' => 'html',
-    ];
-    sendToTelegram($textToAdmin);
+//    $message="
+//    از آی‌دی: 8955
+//    با یوزرنیم: @masoudnikoomanesh
+//    وی‌پی‌ان ۱ ماهه می‌خواد
+//
+//    username: masoud
+//    password: 1234
+//    ";
+//    $adminChatID = '74415978';
+//    $textToAdmin = [
+//        'chat_id' => $adminChatID,
+//        'text' => $message,
+//        'parse_mode' => 'html',
+//    ];
+//    sendToTelegram($textToAdmin);
 }
 function usernamePassword(){
     $current = file_get_contents("info.txt");
-    $adminChatID = 'xxxx';
+    $adminChatID = '74415978';
     $textToAdmin = [
         'chat_id' => $adminChatID,
         'text' => $current,
@@ -149,7 +152,9 @@ if ($text == '/start') {
     if ($number == 1) {
         $username = $text;
         $current = file_get_contents("info.txt");
-        $data_to_write .= $current . " " . $username . "\n";
+        $data_to_write .=
+            $current."        
+〽️ یوزرنیم: ".$username."";
         file_put_contents('info.txt', $data_to_write);
 
         $submitUsername = "
@@ -174,7 +179,10 @@ if ($text == '/start') {
     } else if ($number == 2) {
         $password = $text;
         $current = file_get_contents("info.txt");
-        $data_to_write .= $current . " " . $password . "\n";
+        $data_to_write .=
+            $current."
+            🔱 پسورد: ".$password."
+            ";
         file_put_contents('info.txt', $data_to_write);
         $submitPassword = "
         پسورد شما با عنوان <strong>" . $text . "</strong> ثبت شد.
@@ -207,19 +215,67 @@ if (isset($callback)) {
     if ($callback == '1') {
         $month = "۱ ماهه";
         messageToUser($UserId, $month);
-        messageToAdmin($UserId, $UserName, $month);
+
+        $message="
+        🆔: ".$UserId."
+        
+👤 با یوزرنیم: @".$UserName."
+🔒 وی‌پی‌ان: ".$month."
+        ";
+
+//        $username = $text;
+        $current = file_get_contents("info.txt");
+        $data_to_write .= $current . " " . $message . "\n";
+        file_put_contents('info.txt', $data_to_write);
+
+//        messageToAdmin($UserId, $UserName, $month);
     } else if ($callback == '3') {
         $month = "۳ ماهه";
         messageToUser($UserId, $month);
-        messageToAdmin($UserId, $UserName, $month);
+
+        $message="
+        🆔: ".$UserId."
+        
+👤 با یوزرنیم: @".$UserName."
+🔒 وی‌پی‌ان: ".$month."
+        ";
+
+//        $username = $text;
+        $current = file_get_contents("info.txt");
+        $data_to_write .= $current . " " . $message . "\n";
+        file_put_contents('info.txt', $data_to_write);
+//        messageToAdmin($UserId, $UserName, $month);
     } else if ($callback == '6') {
         $month = "۶ ماهه";
         messageToUser($UserId, $month);
-        messageToAdmin($UserId, $UserName, $month);
+        $message="
+        🆔: ".$UserId."
+        
+👤 با یوزرنیم: @".$UserName."
+🔒 وی‌پی‌ان: ".$month."
+        ";
+
+//        $username = $text;
+        $current = file_get_contents("info.txt");
+        $data_to_write .= $current . " " . $message . "\n";
+        file_put_contents('info.txt', $data_to_write);
+//        messageToAdmin($UserId, $UserName, $month);
     } else if ($callback == '12') {
         $month = "۱۲ ماهه";
         messageToUser($UserId, $month);
-        messageToAdmin($UserId, $UserName, $month);
+        $message="
+        🆔: ".$UserId."
+        
+👤 با یوزرنیم: @".$UserName."
+🔒 وی‌پی‌ان: ".$month."
+        ";
+
+//        $username = $text;
+        $current = file_get_contents("info.txt");
+        $data_to_write .= $current . " " . $message . "\n";
+        file_put_contents('info.txt', $data_to_write);
+        file_put_contents('info.txt', $data_to_write);
+//        messageToAdmin($UserId, $UserName, $month);
     } else if ($callback == '13') {
         messageToUserForPlan($UserId);
     }
