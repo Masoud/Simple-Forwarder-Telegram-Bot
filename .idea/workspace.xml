@@ -17,8 +17,8 @@
       <file leaf-file-name="forwarderBot.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/forwarderBot.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="688">
-              <caret line="281" column="1" selection-start-line="281" selection-start-column="1" selection-end-line="281" selection-end-column="1" />
+            <state relative-caret-position="1674">
+              <caret line="62" column="32" lean-forward="true" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -26,8 +26,8 @@
       <file leaf-file-name="stb.php" pinned="true" current-in-tab="true">
         <entry file="remoteDeploymentFS://&lt;89072926-c562-473e-af6d-7bb1e3b688ab&gt;/bots/stb.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="64" column="10" lean-forward="true" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
+            <state relative-caret-position="192">
+              <caret line="143" column="30" selection-start-line="143" selection-start-column="21" selection-end-line="143" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -147,15 +147,15 @@
       <workItem from="1539710910780" duration="6054000" />
       <workItem from="1540412227502" duration="1468000" />
       <workItem from="1541009466705" duration="1627000" />
-      <workItem from="1541061533011" duration="1811000" />
+      <workItem from="1541061533011" duration="4398000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23120000" />
+    <option name="totallyTimeSpent" value="25707000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="-107" width="2560" height="1005" extended-state="6" />
+    <frame x="1280" y="-107" width="2560" height="1005" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -165,7 +165,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.28196722" />
-      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.10234375" />
+      <window_info active="true" anchor="right" id="Remote Host" order="3" visible="true" weight="0.10234375" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0625" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -267,8 +267,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/forwarderBot.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="281" column="1" selection-start-line="281" selection-start-column="1" selection-end-line="281" selection-end-column="1" />
+        <state relative-caret-position="1674">
+          <caret line="62" column="32" lean-forward="true" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
         </state>
       </provider>
     </entry>
