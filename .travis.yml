@@ -1,4 +1,8 @@
 language: php
 
 php:
-  - "7.x"
+  - 7.1
+  - 7.2
+
+before_script:
+  - composer update
