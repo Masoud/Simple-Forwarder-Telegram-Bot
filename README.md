@@ -1,3 +1,6 @@
+
+[![Build Status](https://travis-ci.org/Masoud/Simple-Forwarder-Telegram-Bot.svg)](https://travis-ci.org/Masoud/Simple-Forwarder-Telegram-Bot)
+
 # Simple Forwarder Telegram Bot
 
 This Telegram Bot can send each messsage you want to your own User ID.
