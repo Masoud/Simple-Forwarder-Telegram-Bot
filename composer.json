@@ -12,7 +12,6 @@
         }
     ],
     "require": {
-        "mashape/unirest-php": "^3.0",
-        "imangazaliev/didom": "^1.10"
+        "mashape/unirest-php": "^3.0"
     }
 }

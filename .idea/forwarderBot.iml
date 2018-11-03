@@ -3,7 +3,6 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/imangazaliev/didom" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/mashape/unirest-php" />
     </content>
     <orderEntry type="inheritedJdk" />

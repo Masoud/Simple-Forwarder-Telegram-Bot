@@ -4,7 +4,6 @@
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/mashape/unirest-php" />
-      <path value="$PROJECT_DIR$/vendor/imangazaliev/didom" />
     </include_path>
   </component>
 </project>

@@ -4,7 +4,5 @@ php:
   - 7.1
   - 7.2
 
-before_script:
+script:
   - composer update
-
-script: vendor/bin/phpunit
