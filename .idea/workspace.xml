@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd105202-146b-4e1b-958d-d3d6dde03f9d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/forwarderBot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/forwarderBot.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/.php_cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/README-RU.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/phpunit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/src/DiDom/Document.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/src/DiDom/Element.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/src/DiDom/Encoder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/src/DiDom/Errors.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/src/DiDom/Exceptions/InvalidSelectorException.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/src/DiDom/Query.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/tests/DiDom/DocumentTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/tests/DiDom/ElementTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/tests/DiDom/QueryTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/tests/DiDom/SelectorTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/tests/TestCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/tests/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/tests/fixtures/books.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/tests/fixtures/menu.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/imangazaliev/didom/tests/fixtures/posts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,11 +26,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="27">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="27">
+                <caret line="1" column="140" selection-start-line="1" selection-start-column="140" selection-end-line="1" selection-end-column="140" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -86,7 +72,6 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="&lt;89072926-c562-473e-af6d-7bb1e3b688ab&gt;/bots/forwarderBot.php" />
         <option value="$PROJECT_DIR$/stb.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/isIt.txt" />
         <option value="&lt;89072926-c562-473e-af6d-7bb1e3b688ab&gt;/bots/isIt.txt" />
         <option value="&lt;89072926-c562-473e-af6d-7bb1e3b688ab&gt;/bots/info.txt" />
@@ -94,6 +79,7 @@
         <option value="&lt;89072926-c562-473e-af6d-7bb1e3b688ab&gt;/bots/stb.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -182,12 +168,12 @@
       <workItem from="1540412227502" duration="1468000" />
       <workItem from="1541009466705" duration="1627000" />
       <workItem from="1541061533011" duration="5840000" />
-      <workItem from="1541234035908" duration="1399000" />
+      <workItem from="1541234035908" duration="1711000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28548000" />
+    <option name="totallyTimeSpent" value="28860000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="778" extended-state="6" />
@@ -289,16 +275,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stb.php" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="135">
-            <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/isIt.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -322,8 +298,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="27">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="27">
+            <caret line="1" column="140" selection-start-line="1" selection-start-column="140" selection-end-line="1" selection-end-column="140" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
