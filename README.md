@@ -27,7 +27,7 @@ Just read inline help to find what each function does.
 
 ```php
 sendToTelegram($text); // Send any text to your bot
-=============
+
     $adminChatID = 'xxxx';
     $current= 'Some Text';
     $textToAdmin = [
@@ -39,6 +39,7 @@ sendToTelegram($text); // Send any text to your bot
 ```
 ```php
 messageToUser($user_id, $month); // Send any message to any user
+
     $UserId = $json['callback_query']['from']['id'];
     $month = "1 Month";
     messageToUser($UserId, $month);
