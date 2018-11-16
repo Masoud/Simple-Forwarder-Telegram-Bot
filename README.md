@@ -27,6 +27,17 @@ Just read inline help to find what each function does.
 
 ```php
 sendToTelegram($text); // Send any text to your bot
+=============
+    $adminChatID = 'xxxx';
+    $current= 'Some Text';
+    $textToAdmin = [
+        'chat_id' => $adminChatID,
+        'text' => $current,
+        'parse_mode' => 'html',
+    ];
+    sendToTelegram($textToAdmin);
+=============
+
 messageToUser($user_id, $month); // Send any message to any user
 saveData($user_id, $user_name, $month); // Save user's information
 usernamePassword(); // Save username and password "specific on this project" 
