@@ -6,6 +6,12 @@ This Telegram Bot can send any message you want to your own User ID.
 Also It includes inline-keyboard-button and saves their data and it sends it to Admin User ID
 
 # Installation
+To have latest updates with ease, use this command on terminal to get a clone:
+
+```bash
+git clone https://github.com/Masoud/Simple-Forwarder-Telegram-Bot
+```
+#### After Clone
 1- First you need to create a bot with [botFather](https://telegram.me/BotFather) and remember your Token.
 
 2- Then, replace your Token in the forwarderBot.php file.
@@ -16,5 +22,14 @@ Also It includes inline-keyboard-button and saves their data and it sends it to 
 
 5- You can now use your bot.
 
+# Usage
+Just read inline help to find what each function does.
+
+```php
+sendToTelegram($text); // Send any text to your bot
+messageToUser($user_id, $month); // Send any message to any user
+saveData($user_id, $user_name, $month); // Save user's information
+usernamePassword(); // Save username and password "specific on this project" 
+```
 # License
 > MIT
