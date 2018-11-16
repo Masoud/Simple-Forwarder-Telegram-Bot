@@ -28,21 +28,23 @@ Just read inline help to find what each function does.
 ```php
 sendToTelegram($text); // Send any text to your bot
 
-    $adminChatID = 'xxxx';
-    $current= 'Some Text';
-    $textToAdmin = [
-        'chat_id' => $adminChatID,
-        'text' => $current,
-        'parse_mode' => 'html',
-    ];
-    sendToTelegram($textToAdmin);
+// Sample
+$adminChatID = 'xxxx';
+$current= 'Some Text';
+$textToAdmin = [
+    'chat_id' => $adminChatID,
+    'text' => $current,
+    'parse_mode' => 'html',
+];
+sendToTelegram($textToAdmin);
 ```
 ```php
 messageToUser($user_id, $month); // Send any message to any user
 
-    $UserId = $json['callback_query']['from']['id'];
-    $month = "1 Month";
-    messageToUser($UserId, $month);
+// Sample
+$UserId = $json['callback_query']['from']['id'];
+$month = "1 Month";
+messageToUser($UserId, $month);
 ```
 ```php    
 saveData($user_id, $user_name, $month); // Save user's information
