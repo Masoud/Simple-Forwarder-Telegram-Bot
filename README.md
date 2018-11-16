@@ -36,9 +36,14 @@ sendToTelegram($text); // Send any text to your bot
         'parse_mode' => 'html',
     ];
     sendToTelegram($textToAdmin);
-=============
-
+```
+```php
 messageToUser($user_id, $month); // Send any message to any user
+    $UserId = $json['callback_query']['from']['id'];
+    $month = "1 Month";
+    messageToUser($UserId, $month);
+```
+```php    
 saveData($user_id, $user_name, $month); // Save user's information
 usernamePassword(); // Save username and password "specific on this project" 
 ```
